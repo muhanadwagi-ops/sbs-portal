@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&display=swap');
+:root{--primary:#563147;--secondary:#0F06B9;--accent:#FA0000;--plum-mid:#6F3963;--bg-warm:#FBFBF5;--bg-soft:#F3EBF0;--text:#4B2146;--white:#FFFFFF;--shadow:0 4px 24px rgba(86,49,71,.12);--radius:14px}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html,body,#root{height:100%;font-family:'Tajawal',sans-serif;background:var(--bg-warm);color:var(--text)}
+.portal-root{min-height:100vh;display:flex;flex-direction:column}
+.portal-header{background:var(--primary);color:var(--white);padding:0 2rem;height:60px;display:flex;align-items:center;justify-content:space-between;box-shadow:var(--shadow)}
+.portal-logo{display:flex;flex-direction:column;line-height:1.1}
+.logo-text{font-size:1.1rem;font-weight:700}
+.logo-sub{font-size:.7rem;font-weight:300;color:rgba(255,255,255,.7);letter-spacing:.5px}
+.lang-toggle{background:rgba(255,255,255,.15);color:var(--white);border:1px solid rgba(255,255,255,.3);border-radius:20px;padding:4px 14px;font-family:'Tajawal',sans-serif;font-size:.85rem;cursor:pointer}
+.lang-toggle:hover{background:rgba(255,255,255,.25)}
+.demo-banner{background:#fff8e1;border-bottom:2px solid #FFB300;padding:10px 2rem;display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
+.demo-badge{background:#FFB300;color:#1a1a1a;font-size:.7rem;font-weight:700;padding:2px 8px;border-radius:4px;letter-spacing:1px}
+.demo-banner p{flex:1;font-size:.85rem;color:#5a4500}
+.demo-cta{background:var(--primary);color:var(--white);padding:6px 16px;border-radius:20px;font-size:.82rem;text-decoration:none;font-weight:500}
+.demo-cta:hover{opacity:.85}
+.portal-main{flex:1;padding:2rem;max-width:1100px;width:100%;margin:0 auto}
+.portal-welcome{font-size:1.5rem;font-weight:700;color:var(--primary);margin-bottom:.4rem}
+.portal-section-label{font-size:.9rem;color:var(--plum-mid);margin-bottom:1.5rem}
+.portal-empty{color:var(--plum-mid);font-size:.95rem;margin-top:2rem}
+.tiles-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1.25rem}
+.product-tile{background:var(--white);border-radius:var(--radius);box-shadow:var(--shadow);padding:1.5rem 1.25rem;display:flex;flex-direction:column;gap:.5rem;position:relative;transition:transform .15s,box-shadow .15s}
+.product-tile:hover{transform:translateY(-3px);box-shadow:0 8px 32px rgba(86,49,71,.18)}
+.tile-icon{font-size:2rem;line-height:1}
+.tile-name{font-size:1rem;font-weight:700;color:var(--text)}
+.tile-tagline{font-size:.82rem;color:var(--plum-mid);flex:1;line-height:1.4}
+.tile-demo-badge{position:absolute;top:10px;right:10px;background:var(--bg-soft);color:var(--plum-mid);font-size:.65rem;font-weight:700;padding:2px 7px;border-radius:4px}
+[dir=rtl] .tile-demo-badge{right:auto;left:10px}
+.tile-btn{margin-top:.5rem;color:var(--white);border:none;border-radius:8px;padding:8px 0;font-family:'Tajawal',sans-serif;font-size:.9rem;font-weight:600;cursor:pointer}
+.tile-btn:hover{opacity:.85}
+.portal-loading,.portal-error{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem;color:var(--plum-mid)}
+.spinner{width:40px;height:40px;border:4px solid var(--bg-soft);border-top-color:var(--primary);border-radius:50%;animation:spin .8s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.portal-error a{color:var(--secondary);font-size:.9rem;text-decoration:none}
+[dir=rtl] .portal-header,[dir=rtl] .demo-banner{flex-direction:row-reverse}
+[dir=rtl] .product-tile{text-align:right}
+@media(max-width:600px){.portal-main{padding:1.25rem}.tiles-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:380px){.tiles-grid{grid-template-columns:1fr}}

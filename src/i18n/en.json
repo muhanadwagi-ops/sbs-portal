@@ -1,0 +1,23 @@
+{
+  "portal": {
+    "welcome": "Welcome to your portal",
+    "welcomeDemo": "You are exploring the Savannah demo",
+    "demoNote": "This is a live demo with sample data. Contact us to get started with your real account.",
+    "contactUs": "Contact Us",
+    "launchProduct": "Open",
+    "comingSoon": "Coming Soon",
+    "yourProducts": "Your Products",
+    "allProducts": "All Products (Demo)",
+    "noAccess": "You do not have access to any products yet.",
+    "tokenError": "Session expired or invalid. Please log in again.",
+    "loading": "Loading your portal..."
+  },
+  "products": {
+    "cca":        { "name": "Customer Care Agent",    "tagline": "Never miss a customer message again." },
+    "pos":        { "name": "Point of Sale",          "tagline": "Ring up sales in seconds, on any device." },
+    "inventory":  { "name": "Inventory Management",   "tagline": "Know exactly what you have, before you run out." },
+    "operations": { "name": "Operations Management",  "tagline": "Run your team and your day, without the chaos." },
+    "manpower":   { "name": "Manpower Management",    "tagline": "Your team, organised and paid on time — every time." }
+  },
+  "lang": { "toggle": "العربية" }
+}
